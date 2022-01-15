@@ -6,12 +6,12 @@
           <h4>Github user Search App</h4>
         </div>
         <div class="card-body">
-          <form class="form-inline">
+          <form class="form-inline" (submit)="searchUser">
             <div class="form-group">
-              <input size="40" type="search" class="form-control" placeholder="GitHub user name">
+              <input [(ngModel)]="githubUser" name="user" size="40" type="search" class="form-control" placeholder="GitHub user name"> {{githubUser}}
             </div>
             <div class="div">
-              <input type="submit" value="submit" class="btn">
+              <input type="submit" value="Search" class="btn btn-secondary btn-sm">
             </div>
           </form>
         </div>
