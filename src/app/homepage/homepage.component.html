@@ -6,9 +6,9 @@
           <h4>Github user Search App</h4>
         </div>
         <div class="card-body">
-          <form class="form-inline" #searchForm="ngForm" name="searchForm">
+          <form class="form-control">
             <div class="form-group">
-              <input name="user" size="40" type="search" class="form-control" placeholder="Enter gitHub username">
+              <input name="searchGhUser" name="searchGhUser" [(ngModel)]="searchUser.searchGhUser" size="40" type="search" class="form-control" placeholder="Enter gitHub username">
             </div>
             <div class="div">
               <button type="submit" value="Search" class="btn btn-secondary ">Search</button>
