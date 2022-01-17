@@ -16,7 +16,7 @@ export class GithubSearchComponent implements OnInit {
   constructor(private githubService: GithubService) { }
 
   public searchUser() {
-    this.githubService.updateUserInfo(this.profile);
+    this.githubService.updateGithubProfile(this.profile);
     this.githubService.getProfile().subscribe(githubProfile => {
       this.githubProfile = githubProfile
     });
