@@ -8,7 +8,7 @@
         <div class="card-body">
           <form class="form-inline" (submit)="searchUser">
             <div class="form-group">
-              <input [(ngModel)]="githubUser" name="user" size="40" type="search" class="form-control" placeholder="GitHub user name"> {{githubUser}}
+              <input [(ngModel)]="profile" name="user" size="40" type="search" class="form-control" placeholder="GitHub username">
             </div>
             <div class="div">
               <input type="submit" value="Search" class="btn btn-secondary btn-sm">
@@ -16,6 +16,21 @@
           </form>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="githubProfile">
+    <div class="col">
+      <img class="img rounded-circle" src="{{githubProfile.avatar_url}}" width="40%">
+
+      <p *ngIf="githubProfile.bio">23{{githubProfile.bio}}</p>
+      <p *ngIf="githubProfile.blog"> {{githubProfile.blog}}</p>
+      <p *ngIf="githubProfile.email"> {{githubProfile.email}}</p>
+      <p *ngIf="githubProfile.location"> {{githubProfile.location}}</p>
+
+      <p>number of repos: <span {{githubProfile.public_repos}}></span></p>
+      <p>number of repos: <span {{githubProfile.public_followers}}></span></p>
+      <p>number of repos: <span {{githubProfile.public_following}}></span></p>
+
     </div>
   </div>
 </div>
