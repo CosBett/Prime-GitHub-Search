@@ -6,12 +6,12 @@
           <h4>Github user Search App</h4>
         </div>
         <div class="card-body">
-          <form class="form-inline" (submit)="searchUser">
+          <form class="form-inline" (submit)="searchUser" #searchForm="ngForm" name="searchForm">
             <div class="form-group">
-              <input [(ngModel)]="profile" name="user" size="40" type="search" class="form-control" placeholder="GitHub username">
+              <input [(ngModel)]="profile" name="user" size="40" type="search" class="form-control" placeholder="Enter gitHub username">
             </div>
             <div class="div">
-              <input type="submit" value="Search" class="btn btn-secondary btn-sm">
+              <button type="submit" value="Search" class="btn btn-secondary ">Search</button>
             </div>
           </form>
         </div>
@@ -28,7 +28,7 @@
       <p *ngIf="githubProfile.location"> {{githubProfile.location}}</p>
 
       <!-- <p>number of repos: <span {{githubProfile.public_repos}}></span></p>
-      <p>number of Followers: <span {{githubProfile.followers}}></span></p>
+      <p>number of followers: <span {{githubProfile.followers}}></span></p>
       <p>number of following: <span {{githubProfile.following}}></span></p> -->
 
     </div>
