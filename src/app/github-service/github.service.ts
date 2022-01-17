@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,9 @@ export class GithubService {
   }
   //gitHub profile
   getProfile() {
-    return this.httpClient.get('https://api.github.com/users/' + this.profile + "?client_id=" + this.client_id + "&client_secret=" + this.client_secret)
+    return this.httpClient.get('https://api.github.com/users/' + this.profile + "?client_id=" + this.client_id + "&client_secret=" + this.client_secret + environment.github_PAT)
       .pipe(map(res => res));
+
   }
 
   //gitHub Repositories

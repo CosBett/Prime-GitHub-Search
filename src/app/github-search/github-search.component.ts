@@ -19,6 +19,7 @@ export class GithubSearchComponent implements OnInit {
     this.githubService.updateGithubProfile(this.profile);
     this.githubService.getProfile().subscribe(githubProfile => {
       this.githubProfile = githubProfile
+      console.log(githubProfile)
     });
 
     this.githubService.getRepos().subscribe(githubRepos => {

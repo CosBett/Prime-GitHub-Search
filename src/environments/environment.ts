@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  gitApi: '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'
+  github_PAT: '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'
 
 };
 
