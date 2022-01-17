@@ -18,18 +18,21 @@
       </div>
     </div>
   </div>
-  <div class="row" *ngIf="githubProfile">
-    <div class="col">
-      <img class="img rounded-circle" src="{{githubProfile.avatar_url}}" width="40%">
+  <div class="row">
+    <div class="col-md-4" *ngIf="githubProfile">
+      <img class="img rounded-circle" src="{{githubProfile.avatar_url}}">
 
       <p *ngIf="githubProfile.bio">23{{githubProfile.bio}}</p>
       <p *ngIf="githubProfile.blog"> {{githubProfile.blog}}</p>
       <p *ngIf="githubProfile.email"> {{githubProfile.email}}</p>
       <p *ngIf="githubProfile.location"> {{githubProfile.location}}</p>
 
-      <p>number of repos: <span {{githubProfile.public_repos}}></span></p>
-      <p>number of repos: <span {{githubProfile.public_followers}}></span></p>
-      <p>number of repos: <span {{githubProfile.public_following}}></span></p>
+      <!-- <p>number of repos: <span {{githubProfile.public_repos}}></span></p>
+      <p>number of Followers: <span {{githubProfile.followers}}></span></p>
+      <p>number of following: <span {{githubProfile.following}}></span></p> -->
+
+    </div>
+    <div class="col-md-8" *ngIf="githubRepos">
 
     </div>
   </div>
