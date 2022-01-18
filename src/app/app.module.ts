@@ -10,6 +10,7 @@ import { ReposComponent } from './repos/repos.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CardHoverDirective } from './card-hover.directive';
+import { DaysCountPipe } from './days-count.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CardHoverDirective } from './card-hover.directive';
     NotFoundComponent,
     HomepageComponent,
     CardHoverDirective,
+    DaysCountPipe,
   ],
   imports: [
     BrowserModule,
