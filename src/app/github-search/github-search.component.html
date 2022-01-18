@@ -1,46 +1,42 @@
-<div class="container mt- 3">
-  <!-- <div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-header bg-secondary text-white">
-        <h4>Github user Search App</h4>
-      </div>
-      <div class="card-body">
-        <form class="form-inline" (submit)="searchUser" #searchForm="ngForm" name="searchForm">
-          <div class="form-group">
-            <input [(ngModel)]="profile" name="user" size="40" type="search" class="form-control" placeholder="Enter gitHub username">
-          </div>
-          <div class="div">
-            <button type="submit" value="Search" class="btn btn-secondary ">Search</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div> -->
+<div class="container mt-4 bg-light shadow-3">
   <div class="row">
-    <div class="col-md-5" *ngIf="githubProfile">
-      <div>
-        <p>{{githubProfile.name}}</p>
+    <div class="col-md-4" *ngIf="githubProfile">
+      <div class="">
+        <p id="profile_name">{{githubProfile.name}}</p>
         <img class="img rounded-circle" src="{{githubProfile.avatar_url}}">
-        <p>{{githubProfile.login}}</p>
-        <p>{{githubProfile.bio}}</p>
-        <!-- <p> {{githubProfile.blog}}</p> -->
-        <p> {{githubProfile.email}}</p>
-        <p> {{githubProfile.location}}</p>
-        <p> Repositories: <span>{{githubProfile.public_repos}}</span></p>
-        <p>Followers: <span> {{githubProfile.followers}}</span></p>
-        <p>Following: <span>{{githubProfile.following}}</span></p>
-
+        <div class="card p-2 github_profile shadow">
+          <p id="login">Username: <span><em>{{githubProfile.login}}</em></span></p>
+          <p> Bio: <span>{{githubProfile.bio}}</span></p>
+          <p> Repositories: <span>{{githubProfile.public_repos}}</span></p>
+          <p>Followers: <span> {{githubProfile.followers}}</span></p>
+          <p>Following: <span>{{githubProfile.following}}</span></p>
+          <p><i class="fas fa-map-marker-alt"></i> <span>{{githubProfile.location}}</span></p>
+        </div>
       </div>
     </div>
-    <div class="col-md-7 overflow-scroll" id='repo-display'>
+    <div class="col-md-8 overflow-scroll shadow" id='repo-display'>
       <div class="row">
-        <div class=" col-6 card" *ngFor="let githubRepos of githubRepos">
-          <p>{{githubRepos.name}}</p>
-          <p>{{githubRepos.description}}</p>
-          <p>{{githubRepos.created_at}}</p>
-          <a href="{{githubRepos.html_url}}"><i class="fa fa-github-alt"> Details</i></a>
+        <div class="div">
+          <h2>Repositories</h2>
+        </div>
+        <div class=" col-md-6 card shadow pt-2 g-3 card-display" *ngFor="let githubRepos of githubRepos">
+          <div class="card-head mb-lg-0">
+            <h5>{{githubRepos.name}}</h5>
+          </div>
+          <div class="card-body">
+            <p>{{githubRepos.description}}</p>
+          </div>
+          <div class="row  d-flex justify-content-space-between">
+            <div class="col-3 d-flex details">
+              <a href="{{githubRepos.html_url}}" id="details"><i class="fa fa-github-alt"> Details</i></a>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-5 ">
+              <p id="created"> Created at: <span>{{githubRepos.created_at|date}}</span></p>
+            </div>
+
+          </div>
+
         </div>
       </div>
 

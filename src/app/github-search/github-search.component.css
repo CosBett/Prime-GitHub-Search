@@ -1,3 +1,87 @@
 #repo-display {
   height: 75vh;
+  text-align: center;
 }
+
+.card-display {
+  background-color: #F4F6F6;
+  width: 48%;
+  margin-right: 10px;
+}
+
+#created {
+  font-size: 10px;
+  color: #1148DC;
+}
+
+#created span {
+  font-weight: bolder;
+  color: black;
+}
+
+#profile_name {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  color: #1148DC;
+}
+
+img {
+  width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login em {
+  color: #1148DC;
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+}
+
+.github_profile {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 0.3;
+  background-color: #F4F6F6;
+}
+
+.github_profile span {
+  color: #1148DC;
+  font-family: 'EB Garamond', serif;
+}
+
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 28px;
+  color: #1148DC;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 18px;
+}
+
+.card-body {
+  font-family: 'EB Garamond', serif
+}
+
+#details {
+  font-size: 15px;
+  color: #1148DC;
+}
+
+.details {
+  text-align: center;
+}
+
+#details:hover {
+  transform: 1 2;
+}
+
+
+/* font-family: 'Abril Fatface', cursive;
+color: #1148DC; 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Dongle', sans-serif;
+font-family: 'EB Garamond', serif;*/
