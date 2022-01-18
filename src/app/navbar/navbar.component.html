@@ -1,21 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Prime GitHub Search</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" id="header">Prime GitHub-Search App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <a class=" nav-item nav-link active" aria-current="page" routerLink="home" routerLinkActive="active" href="#" id="nav_content"><i class="fa fa-home"></i> </a>
+        <a class=" nav-item nav-link active" aria-current="page" routerLink="user" routerLinkActive="active" href="#" id="nav_content">Users</a>
+        <a class=" nav-item nav-link active" aria-current="page" routerLink="repos" routerLinkActive="active" href="#" id="nav_content"> Repository</a>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <div class="container-fluid d-flex justify-content-space-between">
+    <a class="navbar-brand" href="#" id="header">Prime GitHub-Search App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex" id="navbarScroll">
-      <div class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-grow-1" style="--bs-scroll-height: 100px;">
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="home" routerLinkActive="active" href="#" id="nav_content"><i class="fa fa-home"></i> </a>
 
-        <a class=" nav-item nav-link active" aria-current="page" routerLink="home" routerLinkActive="active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class=" nav-link active" aria-current="page" routerLink="user" routerLinkActive="active" href="#" id="nav_content">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class=" nav-item nav-link active" aria-current="page" routerLink="repos" routerLinkActive="active" href="#" id="nav_content"> Repository</a>
 
+        </li>
+      </ul>
 
-        <a class=" nav-item nav-link active" aria-current="page" routerLink="user" routerLinkActive="active" href="#">username</a>
-
-
-        <a class=" nav-item nav-link active" aria-current="page" routerLink="repos" routerLinkActive="active" href="#"> Repository</a>
-
-      </div>
     </div>
   </div>
 </nav>

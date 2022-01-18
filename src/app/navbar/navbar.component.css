@@ -1,0 +1,19 @@
+#header {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  color: #1148DC;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 15px;
+}
+
+#nav_content {
+  color: #1148DC;
+  font-size: 18px;
+  top: 30px;
+  float: right;
+}
