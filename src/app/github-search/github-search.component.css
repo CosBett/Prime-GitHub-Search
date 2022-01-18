@@ -1,5 +1,5 @@
 #repo-display {
-  height: 75vh;
+  height: 73vh;
   text-align: center;
 }
 
@@ -44,6 +44,7 @@ img {
   line-height: 0.3;
   background-color: #F4F6F6;
   border-radius: 10px;
+  margin-bottom: 8px;
 }
 
 .github_profile span {

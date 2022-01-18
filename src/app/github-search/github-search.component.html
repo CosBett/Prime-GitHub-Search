@@ -1,10 +1,10 @@
-<div class="container mt-4 bg-light shadow-3">
+<div class="container  bg-light shadow-3">
   <div class="row">
     <div class="col-md-4" *ngIf="githubProfile">
       <div class="">
         <p id="profile_name">{{githubProfile.name}}</p>
         <img class="img rounded-circle" src="{{githubProfile.avatar_url}}">
-        <div class="card p-2 github_profile shadow" appCardHover>
+        <div class="card p-1 github_profile shadow" appCardHover>
           <p id="login">Username: <span><em>{{githubProfile.login}}</em></span></p>
           <p> Bio: <span>{{githubProfile.bio}}</span></p>
           <p> Repositories: <span>{{githubProfile.public_repos}}</span></p>
@@ -19,7 +19,7 @@
         <div class="div">
           <h2>Repositories</h2>
         </div>
-        <div class=" col-md-6 card shadow pt-2 g-3 card-display" *ngFor="let githubRepos of githubRepos">
+        <div class=" col-md-6 card shadow pt-1 g-3 card-display" *ngFor="let githubRepos of githubRepos">
           <div class="card-head mb-lg-0">
             <h5>{{githubRepos.name}}</h5>
           </div>

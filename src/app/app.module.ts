@@ -11,6 +11,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CardHoverDirective } from './card-hover.directive';
 import { DaysCountPipe } from './days-count.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DaysCountPipe } from './days-count.pipe';
     HomepageComponent,
     CardHoverDirective,
     DaysCountPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

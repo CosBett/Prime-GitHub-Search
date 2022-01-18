@@ -1,0 +1,16 @@
+#search_image {
+  width: 50%;
+  text-align: center;
+}
+
+.reposearch {
+  height: 20vh;
+  width: 100vh;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+
+.search_image {
+  text-align: center;
+}

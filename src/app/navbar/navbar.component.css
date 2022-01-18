@@ -1,3 +1,7 @@
+.topNav {
+  height: 16vh;
+}
+
 #header {
   font-family: 'Abril Fatface', cursive;
   font-size: 30px;
@@ -16,4 +20,10 @@
   font-size: 18px;
   top: 30px;
   float: right;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
