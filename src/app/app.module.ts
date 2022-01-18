@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ReposComponent } from './repos/repos.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { CardHoverDirective } from './card-hover.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     ReposComponent,
     NotFoundComponent,
     HomepageComponent,
+    CardHoverDirective,
   ],
   imports: [
     BrowserModule,
