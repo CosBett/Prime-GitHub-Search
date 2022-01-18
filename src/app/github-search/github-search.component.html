@@ -4,7 +4,7 @@
       <div class="">
         <p id="profile_name">{{githubProfile.name}}</p>
         <img class="img rounded-circle" src="{{githubProfile.avatar_url}}">
-        <div class="card p-1 github_profile shadow" appCardHover>
+        <div class="card p- github_profile shadow" appCardHover>
           <p id="login">Username: <span><em>{{githubProfile.login}}</em></span></p>
           <p> Bio: <span>{{githubProfile.bio}}</span></p>
           <p> Repositories: <span>{{githubProfile.public_repos}}</span></p>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-4"></div>
             <div class="col-5 ">
-              <p id="created"> Created at: <span>{{githubRepos.created_at|date|daysCount}}</span></p>
+              <p id="created"> Created at: <span>{{githubRepos.created_at|date}}</span></p>
             </div>
 
           </div>

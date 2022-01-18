@@ -6,8 +6,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ReposComponent } from './repos/repos.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomepageComponent },
-  { path: 'user', component: GithubSearchComponent },
+  { path: 'user', component: HomepageComponent },
+  { path: 'home', component: GithubSearchComponent },
   { path: 'repos', component: ReposComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
